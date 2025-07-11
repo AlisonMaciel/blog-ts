@@ -31,11 +31,11 @@ export function Blog() {
     return ctx.fetchPublicRepos
   })
 
-  async function handleFetchIssue(event: React.ChangeEvent<HTMLButtonElement>) {
+  async function handleFetchIssue(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
     await fetchPublicRepos(search)
   }
-
+  console.log(search)
   return (
       <BlogContainer>
         <Header />
@@ -68,7 +68,7 @@ export function Blog() {
             </div>
           </div>
         </section>
-        <SearchForm>
+        <SearchForm onSubmit={handleFetchIssue}>
           <div>
             <strong>
               Publicações
@@ -84,7 +84,7 @@ export function Blog() {
             value={search}
             onChange={e => setSearch(e.target.value)}
           />
-          <button type="submit" onClick={() => handleFetchIssue(event)}>
+          <button type="submit">
             Enviar
           </button>
           </div>
