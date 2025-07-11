@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import cover from "../../assets/cover.png"
+import cover from "../../assets/Cover.png"
 
 export const HeaderContainer = styled.header`
   height: 18.5rem;
