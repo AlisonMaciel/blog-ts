@@ -108,4 +108,4 @@ export const LoadingPage = styled.div`
   left: 50%;
   transform: translate(-50% -50%);
   animation: ${loadingPage} 1000ms infinite linear;
-`
+`  

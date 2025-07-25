@@ -1,6 +1,6 @@
 import { Header } from "../../components/Header";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { BlogContainer, SearchForm, SectionArticle } from "./styles";
 
@@ -18,7 +18,8 @@ import { formatRelativeDate } from "../../Utils/formatter";
 
 export function Blog() {
   const [search, setSearch] = useState("")
-  
+  const [cleanSearch, setCleanSearch] = useState(false)
+
   const user = useContextSelector(UserContext, (ctx) => {
     return ctx.user
   })
@@ -33,9 +34,18 @@ export function Blog() {
 
   async function handleFetchIssue(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
+    setCleanSearch(true)
     await fetchPublicRepos(search)
   }
-  console.log(search)
+  
+  useEffect(() => {
+    if (search.trim() === "" && cleanSearch) {
+      console.log("executou")
+      fetchPublicRepos(search)
+      setCleanSearch(false)
+    }
+  }, [search, cleanSearch, fetchPublicRepos])
+
   return (
       <BlogContainer>
         <Header />
