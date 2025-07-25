@@ -40,7 +40,6 @@ export function Blog() {
   
   useEffect(() => {
     if (search.trim() === "" && cleanSearch) {
-      console.log("executou")
       fetchPublicRepos(search)
       setCleanSearch(false)
     }
