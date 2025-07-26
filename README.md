@@ -59,8 +59,6 @@ Se curtir, deixa aquele ⭐ no repositório e me diz o que achou! 😄
 </p>
 
 <p>
-🔗 <strong>Link do GitHub:</strong> 
-<a href="https://lnkd.in/eSHZQRG6" target="_blank">https://lnkd.in/eSHZQRG6</a><br>
 🔗 <strong>Projeto no ar:</strong> 
 <a href="https://lnkd.in/eX9JNZKV" target="_blank">https://lnkd.in/eX9JNZKV</a>
 </p>
