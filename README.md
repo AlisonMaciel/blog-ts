@@ -64,4 +64,4 @@ Se curtir, deixa aquele ⭐ no repositório e me diz o que achou! 😄
 🔗 <strong>Projeto no ar:</strong> 
 <a href="https://lnkd.in/eX9JNZKV" target="_blank">https://lnkd.in/eX9JNZKV</a>
 </p>
-<img src"https://i.imgur.com/Ir7T4W8.png"/>
+<img src="https://i.imgur.com/Ir7T4W8.png"/>
